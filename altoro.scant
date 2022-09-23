@@ -1,0 +1,2596 @@
+<ScanConfiguration Version="9.5">
+  <Application>
+    <StartingUrls>
+      <StartingUrl>http://192.168.57.245:8088</StartingUrl>
+    </StartingUrls>
+    <DefaultEncoding>AutoDetect</DefaultEncoding>
+    <AdditionalServers />
+    <CustomErrorPages>
+      <CustomErrorPage Value="(?i)404.{1,15}Error">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)Error.{1,15}404">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)404.{1,15}Found">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)Page.{1,15}not.{1,15}(found|exist)">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)File.{1,15}not.{1,15}(found|exist)">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)Resource.{1,15}not.{1,15}(found|exist)">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)error.{1,15}request">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)request.{1,15}error">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)Unable to open">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)Unable to find">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)No such file">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)problems?\s*(?:were|was)\s*encountered">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)Invalid Action">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="^$">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="Generic Application Error">String</CustomErrorPage>
+      <CustomErrorPage Value="Generic Error">String</CustomErrorPage>
+    </CustomErrorPages>
+  </Application>
+  <GlassBoxConfiguration>
+    <enableGlassBox>False</enableGlassBox>
+    <detectNonReferencedHTTP>True</detectNonReferencedHTTP>
+  </GlassBoxConfiguration>
+  <customHeaders />
+  <TestedHeaders>
+    <IncludedHeaders />
+    <ExcludedHeaders />
+  </TestedHeaders>
+  <DOMUniquenessConfiguration>
+    <EnableDOMUniqueness>False</EnableDOMUniqueness>
+    <IncludedNodes>^(html|div|p|a|title|script|link|meta|body|form|input|button|ul|li|ol|select|option)</IncludedNodes>
+    <MaxDOMRedundantPages>5</MaxDOMRedundantPages>
+    <IncludedNodesWithContent>^(html|div|p|a|title|script|link|meta|body|form|input|button|ul|li|ol|select|option|#text)</IncludedNodesWithContent>
+    <PagesDifferentiateMode>1</PagesDifferentiateMode>
+  </DOMUniquenessConfiguration>
+  <DOMSimilarityConfiguration>
+    <EnableDOMSimilarity>True</EnableDOMSimilarity>
+    <EnableNaiveSimilarity>False</EnableNaiveSimilarity>
+    <DomElements>DEFAULT</DomElements>
+    <DomThreashold>DEFAULT</DomThreashold>
+    <SpecialThreashold>DEFAULT</SpecialThreashold>
+    <TopInitial>DEFAULT</TopInitial>
+    <StackLimit>DEFAULT</StackLimit>
+    <MinElements>DEFAULT</MinElements>
+    <PageLimit>DEFAULT</PageLimit>
+    <ComputeNoDom>DEFAULT</ComputeNoDom>
+    <ReduceCount>DEFAULT</ReduceCount>
+    <MinThreashold>DEFAULT</MinThreashold>
+    <SimilarityCookies>DEFAULT</SimilarityCookies>
+    <SimilarityFilterRequests>DEFAULT</SimilarityFilterRequests>
+  </DOMSimilarityConfiguration>
+  <DOMRedundancyConfiguration>
+    <EnableDOMRedundancy>True</EnableDOMRedundancy>
+    <ParamFingerprintLimit>DEFAULT</ParamFingerprintLimit>
+    <CookieFingerprintLimit>DEFAULT</CookieFingerprintLimit>
+    <IncludeCookie>DEFAULT</IncludeCookie>
+  </DOMRedundancyConfiguration>
+  <AutomaticCrawlerConfiguration>
+    <EnableAutomaticCrawler>True</EnableAutomaticCrawler>
+    <ContinueExploreAutomaticCrawler>True</ContinueExploreAutomaticCrawler>
+    <AutomaticCrawlerBrowser>0</AutomaticCrawlerBrowser>
+    <AutomaticCrawlerTimeout>1800</AutomaticCrawlerTimeout>
+    <AutomaticCrawlerSaveScreenshots>False</AutomaticCrawlerSaveScreenshots>
+    <AutomaticCrawlerContinuousPhase>True</AutomaticCrawlerContinuousPhase>
+    <AutomaticCrawlerFlushInterval>120</AutomaticCrawlerFlushInterval>
+    <AutomaticCrawlerFlushInitial>30</AutomaticCrawlerFlushInitial>
+    <AutomaticCrawlerFlushJump>30</AutomaticCrawlerFlushJump>
+    <AutomaticCrawlerInitSleep>1000</AutomaticCrawlerInitSleep>
+    <AutomaticCrawlerInitCount>5</AutomaticCrawlerInitCount>
+    <AutomaticCrawlerMinInitSleep>200</AutomaticCrawlerMinInitSleep>
+    <AutomaticCrawlerDimensions>1280:800</AutomaticCrawlerDimensions>
+    <AutomaticCrawlerLoginActions>False</AutomaticCrawlerLoginActions>
+    <AutomaticCrawlerJSX>False</AutomaticCrawlerJSX>
+    <AutomaticCrawlerEnableClickFiltering>False</AutomaticCrawlerEnableClickFiltering>
+    <AutomaticCrawlerClickFilteringThreshold>8</AutomaticCrawlerClickFilteringThreshold>
+    <AutomaticCrawlerElementExecuteThreshold>3</AutomaticCrawlerElementExecuteThreshold>
+    <AutomaticCrawlerLogoutLinks>False</AutomaticCrawlerLogoutLinks>
+    <AutomaticCrawlerExtractLinks>True</AutomaticCrawlerExtractLinks>
+    <AutomaticCrawlerDomManipulation>OnlyAjax</AutomaticCrawlerDomManipulation>
+    <AutomaticCrawlerExcludeActions>Clear|Cancel|Sort|Filter</AutomaticCrawlerExcludeActions>
+    <AutomaticCrawlerAttributesToFilterBy>id|name|ng-model</AutomaticCrawlerAttributesToFilterBy>
+    <AutomaticCrawlerScrollDownsNumber>0</AutomaticCrawlerScrollDownsNumber>
+    <AutomaticCrawlerMLClickFilteringTrainingNumber>0</AutomaticCrawlerMLClickFilteringTrainingNumber>
+    <AutomaticCrawlerMLClickFilteringSigma>750000</AutomaticCrawlerMLClickFilteringSigma>
+    <AutomaticCrawlerMLClickFilteringVectorSize>200</AutomaticCrawlerMLClickFilteringVectorSize>
+    <AutomaticCrawlerUseDblClick>False</AutomaticCrawlerUseDblClick>
+  </AutomaticCrawlerConfiguration>
+  <TestOptimizationConfiguration>
+    <OptimizationLevel>1</OptimizationLevel>
+  </TestOptimizationConfiguration>
+  <Diagnostics>
+    <CollectEntityDetectionStatistics>None</CollectEntityDetectionStatistics>
+    <CollectRuleRuntimeStatistics>False</CollectRuleRuntimeStatistics>
+  </Diagnostics>
+  <AWS4Signature>
+    <Enabled>False</Enabled>
+    <CognitoEnabled>False</CognitoEnabled>
+    <KeysRefreshInterval>270</KeysRefreshInterval>
+  </AWS4Signature>
+  <WebServicesConfiguration>
+    <WebServiceDescriptionFiles />
+    <CreateAutomaticSequences Enabled="False" />
+  </WebServicesConfiguration>
+  <ExploreFilters>
+    <PathLimit Enabled="False">5</PathLimit>
+    <DepthLimit Enabled="True">20</DepthLimit>
+    <LinkLimit Enabled="False">500</LinkLimit>
+    <TimeLimit Enabled="False">300</TimeLimit>
+    <MultiPhaseLimit Enabled="True">4</MultiPhaseLimit>
+    <SendTestsOnLoginPages>True</SendTestsOnLoginPages>
+    <SendTestsOnLogoutPages>True</SendTestsOnLogoutPages>
+    <ScanPolicy>BFS</ScanPolicy>
+    <CaseSensitivePath>True</CaseSensitivePath>
+    <SaveNonVulnerables>False</SaveNonVulnerables>
+    <ExecuteGlobalValidations>True</ExecuteGlobalValidations>
+    <showAllGlobalValidationVariant>False</showAllGlobalValidationVariant>
+    <ClearSessionIdentifiers>DEL_TRANSIENTS</ClearSessionIdentifiers>
+    <RequestFilters>
+      <RequestFilter FilterType="Exclude">
+        <Description>Microsoft SharePoint site removal URL</Description>
+        <PathPattern>
+          <ConfigPattern IsRegularExpression="True">
+            <Pattern>.*/deleteweb.aspx</Pattern>
+          </ConfigPattern>
+        </PathPattern>
+        <ParametersPatterns />
+      </RequestFilter>
+    </RequestFilters>
+    <SendTestsUsingBrowser>True</SendTestsUsingBrowser>
+    <ParseManualExploreData>True</ParseManualExploreData>
+    <JavaScriptLinksExtraction>True</JavaScriptLinksExtraction>
+    <UseAdaptiveTesting>True</UseAdaptiveTesting>
+    <TestCookiesInFormsOnly>True</TestCookiesInFormsOnly>
+    <EnableJSA>True</EnableJSA>
+    <ExcludedFileTypes>
+      <ExcludedFileType Enabled="True" Type="Compressed Files">
+        <Extension>7z</Extension>
+        <Extension>deb</Extension>
+        <Extension>gz</Extension>
+        <Extension>cab</Extension>
+        <Extension>cbr</Extension>
+        <Extension>pkg</Extension>
+        <Extension>rar</Extension>
+        <Extension>sit</Extension>
+        <Extension>tar</Extension>
+        <Extension>tgz</Extension>
+        <Extension>Z</Extension>
+        <Extension>zip</Extension>
+        <Extension>zipx</Extension>
+      </ExcludedFileType>
+      <ExcludedFileType Enabled="True" Type="Documents">
+        <Extension>csv</Extension>
+        <Extension>dbf</Extension>
+        <Extension>dif</Extension>
+        <Extension>doc</Extension>
+        <Extension>dot</Extension>
+        <Extension>mdb</Extension>
+        <Extension>mpd</Extension>
+        <Extension>mpp</Extension>
+        <Extension>mpt</Extension>
+        <Extension>pdf</Extension>
+        <Extension>ppa</Extension>
+        <Extension>pps</Extension>
+        <Extension>ppt</Extension>
+        <Extension>ps</Extension>
+        <Extension>prn</Extension>
+        <Extension>rtf</Extension>
+        <Extension>slk</Extension>
+        <Extension>wmf</Extension>
+        <Extension>xla</Extension>
+        <Extension>xls</Extension>
+        <Extension>xlw</Extension>
+        <Extension>eot</Extension>
+        <Extension>woff</Extension>
+        <Extension>woff2</Extension>
+        <Extension>svg</Extension>
+        <Extension>ttf</Extension>
+      </ExcludedFileType>
+      <ExcludedFileType Enabled="True" Type="Animations">
+        <Extension>264</Extension>
+        <Extension>asf</Extension>
+        <Extension>asx</Extension>
+        <Extension>avi</Extension>
+        <Extension>flv</Extension>
+        <Extension>m1v</Extension>
+        <Extension>m2ts</Extension>
+        <Extension>moov</Extension>
+        <Extension>mov</Extension>
+        <Extension>movie</Extension>
+        <Extension>mkv</Extension>
+        <Extension>mov</Extension>
+        <Extension>mp4</Extension>
+        <Extension>mpa</Extension>
+        <Extension>mpe</Extension>
+        <Extension>mpeg</Extension>
+        <Extension>mpg</Extension>
+        <Extension>qt</Extension>
+        <Extension>rm</Extension>
+        <Extension>vob</Extension>
+        <Extension>wmv</Extension>
+      </ExcludedFileType>
+      <ExcludedFileType Enabled="True" Type="Sounds">
+        <Extension>aiff</Extension>
+        <Extension>au</Extension>
+        <Extension>m3u</Extension>
+        <Extension>mid</Extension>
+        <Extension>midi</Extension>
+        <Extension>mp3</Extension>
+        <Extension>mpa</Extension>
+        <Extension>mpga</Extension>
+        <Extension>ogg</Extension>
+        <Extension>ra</Extension>
+        <Extension>rmi</Extension>
+        <Extension>wav</Extension>
+        <Extension>wma</Extension>
+      </ExcludedFileType>
+      <ExcludedFileType Enabled="True" Type="Images">
+        <Extension>3dm</Extension>
+        <Extension>bmp</Extension>
+        <Extension>gif</Extension>
+        <Extension>ico</Extension>
+        <Extension>jpf</Extension>
+        <Extension>jpg</Extension>
+        <Extension>jpeg</Extension>
+        <Extension>pct</Extension>
+        <Extension>pcx</Extension>
+        <Extension>png</Extension>
+        <Extension>ps</Extension>
+        <Extension>psd</Extension>
+        <Extension>psp</Extension>
+        <Extension>thm</Extension>
+        <Extension>tif</Extension>
+        <Extension>tiff</Extension>
+        <Extension>wmf</Extension>
+      </ExcludedFileType>
+      <ExcludedFileType Enabled="True" Type="Office 2007 files">
+        <Extension>accdb</Extension>
+        <Extension>accde</Extension>
+        <Extension>accdr</Extension>
+        <Extension>accdt</Extension>
+        <Extension>docm</Extension>
+        <Extension>docx</Extension>
+        <Extension>dotm</Extension>
+        <Extension>dotx</Extension>
+        <Extension>potx</Extension>
+        <Extension>pptm</Extension>
+        <Extension>pptx</Extension>
+        <Extension>xlsm</Extension>
+        <Extension>xlsb</Extension>
+        <Extension>xlsx</Extension>
+        <Extension>odf</Extension>
+        <Extension>odg</Extension>
+        <Extension>odp</Extension>
+        <Extension>ods</Extension>
+        <Extension>odt</Extension>
+      </ExcludedFileType>
+      <ExcludedFileType Enabled="True" Type="P2P/Downloads">
+        <Extension>nzb</Extension>
+        <Extension>torrent</Extension>
+      </ExcludedFileType>
+      <ExcludedFileType Enabled="True" Type="Other">
+        <Extension>exe</Extension>
+        <Extension>msi</Extension>
+        <Extension>msp</Extension>
+        <Extension>css</Extension>
+      </ExcludedFileType>
+    </ExcludedFileTypes>
+    <UserAgent Name="Auto Detect" Type="AutoDetect" />
+  </ExploreFilters>
+  <Communication>
+    <UseDynamicTimeout>False</UseDynamicTimeout>
+    <CommunicationTimeOut>10</CommunicationTimeOut>
+    <NumberOfThreads>10</NumberOfThreads>
+    <requestRateControlEnabled>False</requestRateControlEnabled>
+    <requestRateControlMaximumRequests>10</requestRateControlMaximumRequests>
+    <requestRateControlTimeFrame>1000</requestRateControlTimeFrame>
+    <ProxyServerConfiguration>
+      <Enabled>False</Enabled>
+      <IPAddress />
+      <Password Encrypted="false" />
+      <Port>8080</Port>
+      <UserName />
+      <Domain />
+      <UseIESettings>True</UseIESettings>
+    </ProxyServerConfiguration>
+  </Communication>
+  <UserInput>
+    <FormFiller Version="2.0" Enabled="True" DefaultValue="1234" UseDefaultValue="True" RandomDefaultValue="False">
+      <Group LogicalName="InternalAppScanUserName" MatchType="Partial" Action="">
+        <Name>InternalAppScanUserName</Name>
+        <Selection>Ignore</Selection>
+        <Value>jsmith</Value>
+        <MatchNames>
+          <MatchName>uid</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="InternalAppScanPassword" MatchType="Partial" Action="">
+        <Name>InternalAppScanPassword</Name>
+        <Selection>Ignore</Selection>
+        <Value Encrypt="true">rVzDVLnUnuV5cvLTYYDv3A==</Value>
+        <MatchNames>
+          <MatchName>passw</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Address" MatchType="Partial" Action="">
+        <Name>Address</Name>
+        <Selection>Ignore</Selection>
+        <Value>753 Main Street</Value>
+        <MatchNames>
+          <MatchName>addr</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Age" MatchType="Partial" Action="">
+        <Name>Age</Name>
+        <Selection>Ignore</Selection>
+        <Value>25</Value>
+        <MatchNames>
+          <MatchName>age</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Areacode" MatchType="Partial" Action="">
+        <Name>Area code</Name>
+        <Selection>Ignore</Selection>
+        <Value>555</Value>
+        <MatchNames>
+          <MatchName>area</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="City" MatchType="Partial" Action="">
+        <Name>City</Name>
+        <Selection>Ignore</Selection>
+        <Value>Mystery</Value>
+        <MatchNames>
+          <MatchName>city</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Company" MatchType="Partial" Action="">
+        <Name>Company</Name>
+        <Selection>Ignore</Selection>
+        <Value>Acme-Hackme Corp.</Value>
+        <MatchNames>
+          <MatchName>company</MatchName>
+          <MatchName>firm</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Country" MatchType="Partial" Action="">
+        <Name>Country</Name>
+        <Selection>Ignore</Selection>
+        <Value>USA</Value>
+        <MatchNames>
+          <MatchName>country</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Email" MatchType="Partial" Action="">
+        <Name>Email</Name>
+        <Selection>Ignore</Selection>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>mail</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="MailTo" MatchType="Complete" Action="">
+        <Name>MailTo</Name>
+        <Selection>Ignore</Selection>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>To</MatchName>
+          <MatchName>to</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="MailFrom" MatchType="Complete" Action="">
+        <Name>MailFrom</Name>
+        <Selection>Ignore</Selection>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>From</MatchName>
+          <MatchName>from</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="MailBcc" MatchType="Complete" Action="">
+        <Name>MailBcc</Name>
+        <Selection>Ignore</Selection>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>Bcc</MatchName>
+          <MatchName>bcc</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Day" MatchType="Partial" Action="">
+        <Name>Day</Name>
+        <Selection>Ignore</Selection>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>day</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Month" MatchType="Partial" Action="">
+        <Name>Month</Name>
+        <Selection>Ignore</Selection>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>month</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Number" MatchType="Partial" Action="">
+        <Name>Number</Name>
+        <Selection>Ignore</Selection>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>num</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Passport" MatchType="Complete" Action="">
+        <Name>Passport</Name>
+        <Selection>Ignore</Selection>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>passport</MatchName>
+          <MatchName>Passport</MatchName>
+          <MatchName>PASSPORT</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Phone" MatchType="Partial" Action="">
+        <Name>Phone</Name>
+        <Selection>Ignore</Selection>
+        <Value>555-555-5555</Value>
+        <MatchNames>
+          <MatchName>phone</MatchName>
+          <MatchName>tel</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="SocialSecurity" MatchType="Partial" Action="">
+        <Name>Social Security</Name>
+        <Selection>Ignore</Selection>
+        <Value>987 65 4321</Value>
+        <MatchNames>
+          <MatchName>ssn</MatchName>
+          <MatchName>social</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="State" MatchType="Partial" Action="">
+        <Name>State</Name>
+        <Selection>Ignore</Selection>
+        <Value>AK</Value>
+        <MatchNames>
+          <MatchName>state</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Year" MatchType="Partial" Action="">
+        <Name>Year</Name>
+        <Selection>Ignore</Selection>
+        <Value>09</Value>
+        <MatchNames>
+          <MatchName>year</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="ZipCode" MatchType="Partial" Action="">
+        <Name>Zip Code</Name>
+        <Selection>Ignore</Selection>
+        <Value>99801</Value>
+        <MatchNames>
+          <MatchName>zip</MatchName>
+          <MatchName>postal</MatchName>
+        </MatchNames>
+      </Group>
+    </FormFiller>
+    <PlatformAuthentication>
+      <Enabled>False</Enabled>
+      <Domain />
+      <Password Encrypted="false" />
+      <UserName />
+    </PlatformAuthentication>
+    <ClientCertificateOption>
+      <Option>2</Option>
+    </ClientCertificateOption>
+    <ClientSideCertificates>
+      <ClientSideCertificate>
+        <Enabled>False</Enabled>
+        <FilePath />
+        <Raw />
+        <KeyPath />
+        <Password Encrypted="false" />
+        <InOldPemFormat>False</InOldPemFormat>
+      </ClientSideCertificate>
+    </ClientSideCertificates>
+    <UserStoreCertificates />
+  </UserInput>
+  <TestPolicy Version="9.6.52">
+    <BaseTestPolicyFile>C:\Program Files (x86)\IBM\AppScan Standard\Policies\Application-Only.policy</BaseTestPolicyFile>
+    <Description>User Defined...</Description>
+    <DescriptionID />
+    <Modified />
+    <Predefined />
+    <Update>
+      <Invasiveness>
+        <Invasive>False</Invasive>
+        <NonInvasive>True</NonInvasive>
+      </Invasiveness>
+      <App_Infra>
+        <Application>True</Application>
+        <Infrastructure>False</Infrastructure>
+        <ThirdParty>False</ThirdParty>
+      </App_Infra>
+      <Severity>
+        <Informational>True</Informational>
+        <Low>True</Low>
+        <Medium>True</Medium>
+        <High>True</High>
+      </Severity>
+      <NetListener>False</NetListener>
+      <Technology>
+        <BlackBox>True</BlackBox>
+        <GlassBox>False</GlassBox>
+        <WhiteBox>True</WhiteBox>
+        <Mobile>True</Mobile>
+      </Technology>
+      <AllowedThreatClassifications All="True" />
+    </Update>
+    <IssueType Name="attAdnsBlindSSRF" Severity="Default" Active="True">
+      <VariantType Name="attAdnsBlindSSRF" AttackRuleName="attAdnsBlindSSRF" Active="True" />
+      <VariantType Name="attAdnsBlindSSRF" AttackRuleName="attAdnsBlindSSRF2" Active="True" />
+      <VariantType Name="attAdnsBlindSSRF" AttackRuleName="attAdnsBlindSSRF3" Active="True" />
+    </IssueType>
+    <IssueType Name="attBasicAuthInfoLeak" Severity="Default" Active="True">
+      <VariantType Name="attBasicAuthInfoLeak" AttackRuleName="resendOriginalRequest" Active="True" />
+    </IssueType>
+    <IssueType Name="attBlindLDAPInjection" Severity="Default" Active="True">
+      <VariantType Name="attBlindLDAPInjectionDoubleParentheses" AttackRuleName="attBlindLDAPInjectionDoubleParentheses" Active="True" />
+      <VariantType Name="attBlindLDAPInjectionParentheses" AttackRuleName="attBlindLDAPInjectionParentheses" Active="True" />
+    </IssueType>
+    <IssueType Name="attBlindSqlInjectionADNSMSSQL" Severity="Default" Active="True">
+      <VariantType Name="attBlindSqlInjectionADNSMSSQL" AttackRuleName="attBlindSqlInjectionADNSMSSQL" Active="True" />
+      <VariantType Name="attBlindSqlInjectionADNSMSSQL" AttackRuleName="attBlindSqlInjectionADNSMSSQLNUMERIC" Active="True" />
+    </IssueType>
+    <IssueType Name="attBlindSqlInjectionADNSMYSQL" Severity="Default" Active="True">
+      <VariantType Name="attBlindSqlInjectionADNSMYSQL" AttackRuleName="attBlindSqlInjectionADNSMYSQL" Active="True" />
+      <VariantType Name="attBlindSqlInjectionADNSMYSQL" AttackRuleName="attBlindSqlInjectionADNSMYSQLNUMERIC" Active="True" />
+    </IssueType>
+    <IssueType Name="attBlindSqlInjectionADNSPOSTGRESQL" Severity="Default" Active="True">
+      <VariantType Name="attBlindSqlInjectionADNSPOSTGRESQL" AttackRuleName="attBlindSqlInjectionADNSPOSTGRESQL" Active="True" />
+      <VariantType Name="attBlindSqlInjectionADNSPOSTGRESQL" AttackRuleName="attBlindSqlInjectionADNSPOSTGRESQLNUMERIC" Active="True" />
+    </IssueType>
+    <IssueType Name="attBlindSqlInjectionStrings" Severity="Default" Active="True">
+      <VariantType Name="attBlindSqlInjectionNoQuoteErrorNoEnc" AttackRuleName="attBlindSqlInjectionNoQuoteErrorNoEnc" Active="True" />
+      <VariantType Name="attBlindSqlInjectionOrderByNoEnc" AttackRuleName="attBlindSqlInjectionOrderByNoEnc" Active="True" />
+      <VariantType Name="attBlindSqlInjectionSplitNoEnc" AttackRuleName="attBlindSqlInjectionSplitNoEnc" Active="True" />
+      <VariantType Name="attBlindSqlInjectionSplitOracleNoEnc" AttackRuleName="attBlindSqlInjectionSplitOracleNoEnc" Active="True" />
+      <VariantType Name="attBlindSqlInjNoQuoteNoSpaceNoEnc" AttackRuleName="attBlindSqlInjectionNoQuoteNoSpaceNoEnc" Active="True" />
+      <VariantType Name="attBlindSqlInjNoSingleQuoteNoEnc" AttackRuleName="attBlindSqlInjectionNoSingleQuoteNoEnc" Active="True" />
+      <VariantType Name="attBlindSqlInjNumericNoEnc" AttackRuleName="attBlindSqlInjectionNumericNoEnc" Active="True" />
+      <VariantType Name="attBlindSqlInjStringsCommentNoEnc" AttackRuleName="attBlindSqlInjectionStringsCommentNoEnc" Active="True" />
+      <VariantType Name="attBlindSqlInjStringsNoEnc" AttackRuleName="attBlindSqlInjectionStringsNoEnc" Active="True" />
+      <VariantType Name="attBlindSqlInjStringsParenthCommentNoEnc" AttackRuleName="attBlindSqlInjectionStringsParenthCommentNoEnc" Active="True" />
+      <VariantType Name="attBlindSqlInjStringsWithPercentNoEnc" AttackRuleName="attBlindSqlInjectionStringsWithPercentNoEnc" Active="True" />
+    </IssueType>
+    <IssueType Name="attBlindSSRFAdnsSensitiveHeaders" Severity="Default" Active="True">
+      <VariantType Name="attBlindSSRFAdnsSensitiveHeaders" AttackRuleName="attBlindSSRFAdnsSensitiveHeadersHost1" Active="True" />
+      <VariantType Name="attBlindSSRFAdnsSensitiveHeaders" AttackRuleName="attBlindSSRFAdnsSensitiveHeadersXForwardedHost1" Active="True" />
+    </IssueType>
+    <IssueType Name="attBlindSSRFTwsSensitiveHeaders" Severity="Default" Active="True">
+      <VariantType Name="attBlindSSRFTwsSensitiveHeaders" AttackRuleName="attPortListenerBlindSSRFDecimalHost" Active="True" />
+      <VariantType Name="attBlindSSRFTwsSensitiveHeaders" AttackRuleName="attPortListenerBlindSSRFDecimalXForwardedHost" Active="True" />
+    </IssueType>
+    <IssueType Name="attBlindXPathInjection" Severity="Default" Active="True">
+      <VariantType Name="attBlindXpathInjectionSingleQuote" AttackRuleName="attBlindXPathInjectionStringsQuote" Active="True" />
+    </IssueType>
+    <IssueType Name="attCommandInjectionAdns" Severity="Default" Active="True">
+      <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg1" Active="True" />
+      <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg10" Active="True" />
+      <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg11" Active="True" />
+      <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg12" Active="True" />
+      <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg13" Active="True" />
+      <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg2" Active="True" />
+      <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg3" Active="True" />
+      <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg4" Active="True" />
+      <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg5" Active="True" />
+      <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg6" Active="True" />
+      <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg7" Active="True" />
+      <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg8" Active="True" />
+      <VariantType Name="attCommandInjectionAdns" AttackRuleName="attCommandInjectionAdnsMsg9" Active="True" />
+    </IssueType>
+    <IssueType Name="attCommandInjectionUnixTws" Severity="Default" Active="True">
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutation" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationAmpersand" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationAmpersandUrlEncoded" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationBackTick" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationBackTickUrlEncoded" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDollar" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDollarUrlEncoded" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDoubleAmpersand" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDoubleAmpersandUrlEncoded" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDoublePipe" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDoublePipeUrlEncoded" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDoubleQuote" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationDoubleQuoteUrlEncoded" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationInputRedirect" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationInputRedirectUrlEncoded" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationOutputRedirect" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationOutputRedirectUrlEncoded" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationPipe" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationPipeUrlEncoded" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationSemiColon" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationSemiColonUrlEncoded" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationSingelQuote" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationSingelQuoteUrlEncoded" Active="True" />
+      <VariantType Name="attCommandInjectionUnixTws" AttackRuleName="attCommandInjectionUnixTwsMutationUrlEncoded" Active="True" />
+    </IssueType>
+    <IssueType Name="attCommandInjectionWindowsTws" Severity="Default" Active="True">
+      <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTws" Active="True" />
+      <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsAmpersand" Active="True" />
+      <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsDoubleQuote" Active="True" />
+      <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsInputRedirection" Active="True" />
+      <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsLogicalAnd" Active="True" />
+      <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsLogicalOr" Active="True" />
+      <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsOutputRedirection" Active="True" />
+      <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsPipe" Active="True" />
+      <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsRightParenthesis" Active="True" />
+      <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsSemiColon" Active="True" />
+      <VariantType Name="attCommandInjectionWindowsTws" AttackRuleName="attCommandInjectionWindowsTwsSingleQuote" Active="True" />
+    </IssueType>
+    <IssueType Name="attContentSecurityPolicy" Severity="Default" Active="True">
+      <VariantType Name="attContentSecurityPolicy" AttackRuleName="addSuspiciousContents" Active="True" />
+    </IssueType>
+    <IssueType Name="attContentSecurityPolicyFrameAncestors" Severity="Default" Active="True">
+      <VariantType Name="attContentSecurityPolicyFrameAncestors" AttackRuleName="addSuspiciousContents" Active="True" />
+    </IssueType>
+    <IssueType Name="attContentSecurityPolicyObjectSrc" Severity="Default" Active="True">
+      <VariantType Name="attContentSecurityPolicyObjectSrc" AttackRuleName="addSuspiciousContents" Active="True" />
+    </IssueType>
+    <IssueType Name="attContentSecurityPolicyScriptSrc" Severity="Default" Active="True">
+      <VariantType Name="attContentSecurityPolicyScriptSrc" AttackRuleName="addSuspiciousContents" Active="True" />
+    </IssueType>
+    <IssueType Name="attCrossSiteRequestForgery" Severity="Default" Active="True">
+      <VariantType Name="attCrossSiteRequestForgeryParam" AttackRuleName="attCrossSiteRequestForgeryParam" Active="True" />
+    </IssueType>
+    <IssueType Name="attCrossSiteScripting" Severity="Default" Active="True">
+      <VariantType Name="AsciiXSS" AttackRuleName="AsciiXSSPayload" Active="True" />
+      <VariantType Name="attAddParamXSS" AttackRuleName="addParam4XSS" Active="True" />
+      <VariantType Name="attAllParamXSS" AttackRuleName="setUserInputParamsXSS" Active="True" />
+      <VariantType Name="attAspDotNetXSS" AttackRuleName="attAspDotNetXSS" Active="True" />
+      <VariantType Name="attBadLoginXSS" AttackRuleName="attBadLoginXSS" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingBckSlash" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingBckSlashEnc" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingDblSlash" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingDblSlashEnc" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingSlash" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingSlashEnc" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingSVG1" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingSVG1Enc" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant1" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant10" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant11" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant2" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant3" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant4" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant5" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant6" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant7" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant8" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariant9" Active="True" />
+      <VariantType Name="attCSS" AttackRuleName="paramCrossSiteScriptingVariantUnicodeEncoded1" Active="True" />
+      <VariantType Name="attCSS_short" AttackRuleName="paramCrossSiteScriptingVariant_short" Active="True" />
+      <VariantType Name="attCSSHtmlEntity" AttackRuleName="paramSetImgSrcCssHtmlEntity" Active="True" />
+      <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-1" Active="True" />
+      <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-2" Active="True" />
+      <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-3" Active="True" />
+      <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-4" Active="True" />
+      <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-5" Active="True" />
+      <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-6" Active="True" />
+      <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-7" Active="True" />
+      <VariantType Name="attCSSinJScontext3" AttackRuleName="paramCSSinJS3-8" Active="True" />
+      <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-1" Active="True" />
+      <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-2" Active="True" />
+      <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-3" Active="True" />
+      <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-4" Active="True" />
+      <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-5" Active="True" />
+      <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-6" Active="True" />
+      <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-7" Active="True" />
+      <VariantType Name="attCSSinJScontext4" AttackRuleName="paramCSSinJS4-8" Active="True" />
+      <VariantType Name="attCSSinJScontext5" AttackRuleName="paramCSSinJS5-1" Active="True" />
+      <VariantType Name="attCSSinJScontext5" AttackRuleName="paramCSSinJS5-2" Active="True" />
+      <VariantType Name="attCSSinJScontext5" AttackRuleName="paramCSSinJS5-3" Active="True" />
+      <VariantType Name="attCSSinJScontext5" AttackRuleName="paramCSSinJS5-4" Active="True" />
+      <VariantType Name="attCSSinJScontext6" AttackRuleName="paramCSSinJS6_1" Active="True" />
+      <VariantType Name="attCSSinJScontext6" AttackRuleName="paramCSSinJS6_2" Active="True" />
+      <VariantType Name="attCSSinJScontext789" AttackRuleName="paramCSSinJS7-1" Active="True" />
+      <VariantType Name="attCSSinJScontext789" AttackRuleName="paramCSSinJS7-2" Active="True" />
+      <VariantType Name="attCSSinJScontext789" AttackRuleName="paramCSSinJS8-1" Active="True" />
+      <VariantType Name="attCSSinJScontext789" AttackRuleName="paramCSSinJS8-2" Active="True" />
+      <VariantType Name="attCSSinJScontext789" AttackRuleName="paramCSSinJS9-1" Active="True" />
+      <VariantType Name="attCSSinJScontext789" AttackRuleName="paramCSSinJS9-2" Active="True" />
+      <VariantType Name="attCSSinJScontextReplace" AttackRuleName="paramCSSinJSReplace" Active="True" />
+      <VariantType Name="attCSSinJScontextReplace" AttackRuleName="paramCSSinJSReplaceEnc" Active="True" />
+      <VariantType Name="attCssInPath" AttackRuleName="attCssInPathGET1" Active="True" />
+      <VariantType Name="attCssInPath" AttackRuleName="attCssInPathGET1_d" Active="True" />
+      <VariantType Name="attCssInPath" AttackRuleName="attCssInPathGET2" Active="True" />
+      <VariantType Name="attCssInPath" AttackRuleName="attCssInPathGET3" Active="True" />
+      <VariantType Name="attCssInPath" AttackRuleName="attCssInPathGET4" Active="True" />
+      <VariantType Name="attCssInPath" AttackRuleName="attCssInPathGET4_null" Active="True" />
+      <VariantType Name="attCssInPath" AttackRuleName="attCssInPathGET5" Active="True" />
+      <VariantType Name="attCssInPath" AttackRuleName="attCssInPathPOST1" Active="True" />
+      <VariantType Name="attCssInPath" AttackRuleName="attCssInPathPOST2" Active="True" />
+      <VariantType Name="attCssInPath" AttackRuleName="attCssInPathPOST3" Active="True" />
+      <VariantType Name="attCssInPath" AttackRuleName="attCssInPathPOST4" Active="True" />
+      <VariantType Name="attCssInPath" AttackRuleName="attCssInPathPOST5" Active="True" />
+      <VariantType Name="attCssInPathJS" AttackRuleName="attCssInPathJSdec" Active="True" />
+      <VariantType Name="attCssInPathJS" AttackRuleName="attCssInPathJSenc" Active="True" />
+      <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathGET11" Active="True" />
+      <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathGET11_d" Active="True" />
+      <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathGET22" Active="True" />
+      <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathGET33" Active="True" />
+      <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathGET33_1" Active="True" />
+      <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathGET44" Active="True" />
+      <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathGET44_null" Active="True" />
+      <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathPOST11" Active="True" />
+      <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathPOST22" Active="True" />
+      <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathPOST33" Active="True" />
+      <VariantType Name="attCssInPathNoSlash" AttackRuleName="attCssInPathPOST44" Active="True" />
+      <VariantType Name="attCSSReferer" AttackRuleName="setHttpRefererToCSS1" Active="True" />
+      <VariantType Name="attCSSReferer" AttackRuleName="setHttpRefererToCSS2" Active="True" />
+      <VariantType Name="attCSSthroughComments" AttackRuleName="paramCSSoutOfComment" Active="True" />
+      <VariantType Name="attCSSwithStyle" AttackRuleName="paramCSSwithStyle" Active="True" />
+      <VariantType Name="attDirXSS_UTF7" AttackRuleName="dirAppendXSS_UTF7_1" Active="True" />
+      <VariantType Name="attDirXSS_UTF7" AttackRuleName="dirAppendXSS_UTF7_2" Active="True" />
+      <VariantType Name="attParamCssImgSrc" AttackRuleName="paramSetImgOnerrorCSS" Active="True" />
+      <VariantType Name="attParamCssImgSrc" AttackRuleName="paramSetImgOnerrorCSSenc" Active="True" />
+      <VariantType Name="attParamCssImgSrc" AttackRuleName="paramSetImgOnerrorCSSraw" Active="True" />
+      <VariantType Name="attParamCssImgSrc" AttackRuleName="paramSetImgSrcCSS" Active="True" />
+      <VariantType Name="attParamCssImgSrc" AttackRuleName="paramSetImgSrcCSSenc" Active="True" />
+      <VariantType Name="attParamCssImgSrcLongUTF8woSemicolons" AttackRuleName="attParamCssImgSrcLongUTF8woSemicolons" Active="True" />
+      <VariantType Name="attParamTextAreaCSS" AttackRuleName="paramTextAreaCSS" Active="True" />
+      <VariantType Name="attParamXSS_UTF7" AttackRuleName="paramXSS_UTF7_1" Active="True" />
+      <VariantType Name="attParamXSS_UTF7" AttackRuleName="paramXSS_UTF7_2" Active="True" />
+      <VariantType Name="attPathCssImgSrc" AttackRuleName="pathSetImgSrcCSS1" Active="True" />
+      <VariantType Name="attPathCssImgSrc" AttackRuleName="pathSetImgSrcCSS2" Active="True" />
+      <VariantType Name="attSmartXSSAttr1" AttackRuleName="paramCSSinFrameSRC" Active="True" />
+      <VariantType Name="attSmartXSSAttr2" AttackRuleName="paramSmartXSSAttr2" Active="True" />
+      <VariantType Name="attSmartXSSAttr2" AttackRuleName="paramSmartXSSAttr2enc" Active="True" />
+      <VariantType Name="attSmartXSSAttr3" AttackRuleName="paramSmartXSSAttr3" Active="True" />
+      <VariantType Name="attSmartXSSAttr3" AttackRuleName="paramSmartXSSAttr3enc" Active="True" />
+      <VariantType Name="attSmartXSSAttr4" AttackRuleName="paramSmartXSSAttr4" Active="True" />
+      <VariantType Name="attSmartXSSAttr4" AttackRuleName="paramSmartXSSAttr4enc" Active="True" />
+      <VariantType Name="attSmartXSSJS1" AttackRuleName="paramSmartXSSJS1" Active="True" />
+      <VariantType Name="attSmartXSSJS1" AttackRuleName="paramSmartXSSJS1-" Active="True" />
+      <VariantType Name="attSmartXSSJS1" AttackRuleName="paramSmartXSSJS1enc" Active="True" />
+      <VariantType Name="attSmartXSSJS1" AttackRuleName="paramSmartXSSJS1-enc" Active="True" />
+      <VariantType Name="attSmartXSSJS2" AttackRuleName="paramSmartXSSJS2" Active="True" />
+      <VariantType Name="attSmartXSSJS2" AttackRuleName="paramSmartXSSJS2enc" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag1" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag11" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag12" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag12enc" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag13" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag13enc" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag1doubleEnc" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag1enc" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag2" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag2enc" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag3" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag4" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag51enc" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag5enc" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag6" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag8" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag8enc" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag91enc" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTag9enc" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagBckSlash" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagBckSlashEnc" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagDblSlash" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagDblSlashEnc" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagSlash" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagSlashEnc" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagSVG1" Active="True" />
+      <VariantType Name="attSmartXSSTag" AttackRuleName="paramSmartXSSTagSVG1Enc" Active="True" />
+      <VariantType Name="attSmartXSSTag7" AttackRuleName="paramSmartXSSTag7" Active="True" />
+      <VariantType Name="attSmartXSSTag7" AttackRuleName="paramSmartXSSTag7enc" Active="True" />
+      <VariantType Name="attSmartXSSTagNoQueryParam" AttackRuleName="paramSmartXSSTag5" Active="True" />
+      <VariantType Name="attSmartXSSTagNoQueryParam" AttackRuleName="paramSmartXSSTag51" Active="True" />
+      <VariantType Name="attSmartXSSTagNoQueryParam" AttackRuleName="paramSmartXSSTag9" Active="True" />
+      <VariantType Name="attSmartXSSTagNoQueryParam" AttackRuleName="paramSmartXSSTag91" Active="True" />
+      <VariantType Name="attXssAnalyzer" AttackRuleName="analyzeXss" Active="True" />
+      <VariantType Name="attXssAnalyzerPath" AttackRuleName="analyzeXssOnPath" Active="True" />
+      <VariantType Name="attXssAnalyzerReferer" AttackRuleName="analyzeXssOnReferer" Active="True" />
+      <VariantType Name="attXSSinnerPath" AttackRuleName="XSSinnerPath" Active="True" />
+      <VariantType Name="attXSSinParamName" AttackRuleName="attXSSinParamNameGET1" Active="True" />
+      <VariantType Name="attXSSinParamName" AttackRuleName="attXSSinParamNameGET2" Active="True" />
+      <VariantType Name="attXSSinParamName" AttackRuleName="attXSSinParamNamePOST1" Active="True" />
+      <VariantType Name="attXSSinParamName" AttackRuleName="attXSSinParamNamePOST2" Active="True" />
+      <VariantType Name="attXSSScriptPostParamInGet" AttackRuleName="paramXSSScriptPostParamInGet" Active="True" />
+      <VariantType Name="attXSSScriptSrcAttr" AttackRuleName="paramXSSScriptSrcAttr" Active="True" />
+      <VariantType Name="MicrosoftASPNETXSS" AttackRuleName="MicrosoftASPNETXSS" Active="True" />
+      <VariantType Name="paramCSSinElementContext" AttackRuleName="paramCSSinFrameSRC" Active="True" />
+      <VariantType Name="paramCSSinJS10" AttackRuleName="paramCSSinJS10-1" Active="True" />
+      <VariantType Name="paramCSSinJS10" AttackRuleName="paramCSSinJS10-2" Active="True" />
+      <VariantType Name="paramCSSinStyleElementContext" AttackRuleName="paramCSSinStyleElementContext1" Active="True" />
+      <VariantType Name="paramCSSinStyleElementContext" AttackRuleName="paramCSSinStyleElementContext2" Active="True" />
+      <VariantType Name="paramCSSinStyleElementContext" AttackRuleName="paramCSSinStyleElementContext3" Active="True" />
+      <VariantType Name="XSSinXMLresponse" AttackRuleName="XSSinXML" Active="True" />
+    </IssueType>
+    <IssueType Name="attDtdXXE" Severity="Default" Active="True">
+      <VariantType Name="attDtdBlindXXEADNS" AttackRuleName="attBlindXXEADNS" Active="True" />
+      <VariantType Name="attDtdBlindXXEParam" AttackRuleName="attBlindXXEParam" Active="True" />
+      <VariantType Name="attDtdBlindXXEParamADNS" AttackRuleName="attBlindXXEParamADNS" Active="True" />
+      <VariantType Name="attDtdXXEUnixParam" AttackRuleName="attXXEUnixParam" Active="True" />
+      <VariantType Name="attDtdXXEWin32Param" AttackRuleName="attXXEWin32-1Param" Active="True" />
+      <VariantType Name="attDtdXXEWin32Param" AttackRuleName="attXXEWin32-2Param" Active="True" />
+    </IssueType>
+    <IssueType Name="attDtdXXEJSON" Severity="Default" Active="True">
+      <VariantType Name="attDtdBlindXXEJSON" AttackRuleName="attBlindXXEJSON" Active="True" />
+      <VariantType Name="attDtdBlindXXEJSONADNS" AttackRuleName="attBlindXXEJSONADNS" Active="True" />
+      <VariantType Name="attDtdXXEJSONUnix" AttackRuleName="attXXEJSONUnix" Active="True" />
+      <VariantType Name="attDtdXXEJSONWin32" AttackRuleName="attXXEJSONWin32-1" Active="True" />
+      <VariantType Name="attDtdXXEJSONWin32" AttackRuleName="attXXEJSONWin32-2" Active="True" />
+    </IssueType>
+    <IssueType Name="attFileUnix" Severity="Default" Active="True">
+      <VariantType Name="attPathTraversalFileCreateUnix" AttackRuleName="attPathTraversalFileCreateUnix" Active="True" />
+    </IssueType>
+    <IssueType Name="attFileUploadXXE" Severity="Default" Active="True">
+      <VariantType Name="FileUploadXXE" AttackRuleName="addFileContentXXE" Active="True" />
+    </IssueType>
+    <IssueType Name="attHostHeaderInjection" Severity="Default" Active="True">
+      <VariantType Name="attHostHeaderInjection" AttackRuleName="attHostHeaderInjection" Active="True" />
+      <VariantType Name="attHostHeaderInjection" AttackRuleName="attHostHeaderInjectionXFwdHeader" Active="True" />
+    </IssueType>
+    <IssueType Name="attJWTWeakSignature" Severity="Default" Active="True">
+      <VariantType Name="attJWTWeakSignature" AttackRuleName="attJWTWeakSignature" Active="True" />
+    </IssueType>
+    <IssueType Name="attLDAPInjection" Severity="Default" Active="True">
+      <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection1" Active="True" />
+      <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection2" Active="True" />
+      <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection3" Active="True" />
+      <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection4" Active="True" />
+      <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection5" Active="True" />
+      <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection6" Active="True" />
+      <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection7" Active="True" />
+      <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection8" Active="True" />
+      <VariantType Name="attLDAPInjection2" AttackRuleName="paramLDAPInjection9" Active="True" />
+    </IssueType>
+    <IssueType Name="attMongoDB" Severity="Default" Active="True">
+      <VariantType Name="attMongoDB51" AttackRuleName="MongoDB_BSQLi_Param1" Active="True" />
+    </IssueType>
+    <IssueType Name="attPortListenerBlindSSRF" Severity="Default" Active="True">
+      <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRF" Active="True" />
+      <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRFDotelessHex" Active="True" />
+      <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRFDotlessDecimal" Active="True" />
+      <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRFDotlessOcta" Active="True" />
+      <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRFHex" Active="True" />
+      <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRFMixedMode" Active="True" />
+      <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRFOcta" Active="True" />
+      <VariantType Name="attPortListenerBlindSSRF" AttackRuleName="attPortListenerBlindSSRFOverflow" Active="True" />
+    </IssueType>
+    <IssueType Name="attReferrerPolicyAlert" Severity="Default" Active="True">
+      <VariantType Name="attReferrerPolicyAlert" AttackRuleName="addSuspiciousContents" Active="True" />
+    </IssueType>
+    <IssueType Name="attReferrerPolicyHeaderExist" Severity="Default" Active="True">
+      <VariantType Name="attReferrerPolicyHeaderExist" AttackRuleName="addSuspiciousContents" Active="True" />
+    </IssueType>
+    <IssueType Name="attSameSiteCookie" Severity="Default" Active="True">
+      <VariantType Name="attSameSiteCookie" AttackRuleName="attSameSiteCookie" Active="True" />
+    </IssueType>
+    <IssueType Name="attSameSiteCookieUnrestrictive" Severity="Default" Active="True">
+      <VariantType Name="attSameSiteCookieUnrestrictive" AttackRuleName="attSameSiteCookieUnrestrictive" Active="True" />
+    </IssueType>
+    <IssueType Name="attServerSideTemplateInjection" Severity="Default" Active="True">
+      <VariantType Name="attServerSideTemplateInjection" AttackRuleName="attServerSideTemplateInjection" Active="True" />
+      <VariantType Name="attServerSideTemplateInjection" AttackRuleName="attServerSideTemplateInjectionAngleBraces" Active="True" />
+      <VariantType Name="attServerSideTemplateInjection" AttackRuleName="attServerSideTemplateInjectionDoubleCurlyBraces" Active="True" />
+      <VariantType Name="attServerSideTemplateInjection" AttackRuleName="attServerSideTemplateInjectionHashSingleBraces" Active="True" />
+    </IssueType>
+    <IssueType Name="attUnnecessaryResponseHeaders" Severity="Default" Active="True">
+      <VariantType Name="attUnnecessaryResponseHeaders" AttackRuleName="attUnnecessaryResponseHeaders" Active="True" />
+    </IssueType>
+    <IssueType Name="attXPathInjection" Severity="Default" Active="True">
+      <VariantType Name="attXPathInjection" AttackRuleName="xPathInjection2" Active="True" />
+      <VariantType Name="attXPathInjection" AttackRuleName="xPathInjection3" Active="True" />
+      <VariantType Name="attXPathInjection" AttackRuleName="xPathInjection4" Active="True" />
+      <VariantType Name="attXPathInjection" AttackRuleName="xPathInjection5" Active="True" />
+      <VariantType Name="attXPathInjection" AttackRuleName="xPathInjection6" Active="True" />
+      <VariantType Name="attXPathInjection" AttackRuleName="xPathInjection7" Active="True" />
+      <VariantType Name="attXPathInjection" AttackRuleName="xPathInjection8" Active="True" />
+    </IssueType>
+    <IssueType Name="CORSArbitraryOrigin" Severity="Default" Active="True">
+      <VariantType Name="CORSArbitraryOrigin" AttackRuleName="CORSArbitraryOrigin" Active="True" />
+    </IssueType>
+    <IssueType Name="CrossSiteRequestForgeryInOAuth" Severity="Default" Active="True">
+      <VariantType Name="CrossSiteRequestForgeryInOAuth" AttackRuleName="CrossSiteRequestForgeryInOAuth" Active="True" />
+    </IssueType>
+    <IssueType Name="DOMXSS1" Severity="Default" Active="True">
+      <VariantType Name="attXssAnalyzerParameterDomBased" AttackRuleName="analyzeXss" Active="True" />
+      <VariantType Name="DOMBasedXSS_nonReflect" AttackRuleName="DOMXSSAppendFragment_nonReflect" Active="True" />
+      <VariantType Name="DOMBasedXSS_nonReflect" AttackRuleName="DOMXSSAppendFragment_nonReflect_enc" Active="True" />
+    </IssueType>
+    <IssueType Name="GV_JSONXSS" Severity="Default" Active="True">
+      <VariantType Name="GV_JSONXSS" AttackRuleName="GV_doNothing" Active="True" />
+    </IssueType>
+    <IssueType Name="GV_TargetBlankLink" Severity="Default" Active="True">
+      <VariantType Name="GV_TargetBlankLink" AttackRuleName="SetAllUserParamsToLink" Active="True" />
+    </IssueType>
+    <IssueType Name="OAuthImplicitGrantType" Severity="Default" Active="True">
+      <VariantType Name="OAuthImplicitGrantType" AttackRuleName="OAuthImplicitGrantType" Active="True" />
+    </IssueType>
+    <IssueType Name="probePort8080" Severity="Default" Active="True">
+      <VariantType Name="probePort8080" AttackRuleName="changePortTo8080" Active="True" />
+    </IssueType>
+    <IssueType Name="probePort8880" Severity="Default" Active="True">
+      <VariantType Name="probePort8880" AttackRuleName="changePortTo8880" Active="True" />
+    </IssueType>
+    <IssueType Name="ReflectedTargetBlankLink" Severity="Default" Active="True">
+      <VariantType Name="ReflectedTargetBlankLink" AttackRuleName="SetAllUserParamsToLink" Active="True" />
+    </IssueType>
+    <IssueType Name="SriSupport" Severity="Default" Active="True">
+      <VariantType Name="SriSupport" AttackRuleName="SriExistCheck" Active="True" />
+    </IssueType>
+    <IssueType Name="SSJSDirListing" Severity="Default" Active="True">
+      <VariantType Name="SSJSDirListing" AttackRuleName="SSJSDirListing1" Active="True" />
+      <VariantType Name="SSJSDirListing" AttackRuleName="SSJSDirListing1_enc" Active="True" />
+      <VariantType Name="SSJSDirListing" AttackRuleName="SSJSDirListing2" Active="True" />
+      <VariantType Name="SSJSDirListing" AttackRuleName="SSJSDirListing2_enc" Active="True" />
+    </IssueType>
+    <IssueType Name="TargetBlankLink" Severity="Default" Active="True">
+      <VariantType Name="TargetBlankLink" AttackRuleName="resendOriginalRequest" Active="True" />
+    </IssueType>
+    <PERoles />
+  </TestPolicy>
+  <SessionManagement Version="1.2">
+    <SessionManagementMode>Manual</SessionManagementMode>
+    <AllowConcurrentLogins>True</AllowConcurrentLogins>
+    <AWSIdentityDetectedInLogin>False</AWSIdentityDetectedInLogin>
+    <UseAutomaticABL>False</UseAutomaticABL>
+    <inSessionDomTexts>
+      <inSessionDomText>Sign Off</inSessionDomText>
+      <inSessionDomText>Contact Us</inSessionDomText>
+      <inSessionDomText>Feedback</inSessionDomText>
+      <inSessionDomText>Search</inSessionDomText>
+      <inSessionDomText>MY ACCOUNT</inSessionDomText>
+      <inSessionDomText>PERSONAL</inSessionDomText>
+      <inSessionDomText>SMALL BUSINESS</inSessionDomText>
+      <inSessionDomText>INSIDE ALTORO MUTUAL</inSessionDomText>
+      <inSessionDomText>I WANT TO ...</inSessionDomText>
+      <inSessionDomText>View Account Summary</inSessionDomText>
+      <inSessionDomText>View Recent Transactions</inSessionDomText>
+      <inSessionDomText>Transfer Funds</inSessionDomText>
+      <inSessionDomText>Search News Articles</inSessionDomText>
+      <inSessionDomText>Customize Site Language</inSessionDomText>
+      <inSessionDomText>Hello John Smith</inSessionDomText>
+      <inSessionDomText>View Account Details:</inSessionDomText>
+      <inSessionDomText>800002 Savings</inSessionDomText>
+      <inSessionDomText>800003 Checking</inSessionDomText>
+      <inSessionDomText>4539082039396288 Credit Card</inSessionDomText>
+      <inSessionDomText>Congratulations!</inSessionDomText>
+      <inSessionDomText>You have been pre-approved for an Altoro Gold Visa with a credit limit of $10000!</inSessionDomText>
+      <inSessionDomText>Privacy Policy</inSessionDomText>
+      <inSessionDomText>Security Statement</inSessionDomText>
+      <inSessionDomText>Server Status Check</inSessionDomText>
+      <inSessionDomText>REST API</inSessionDomText>
+      <inSessionDomText>Get your copy from GitHub</inSessionDomText>
+      <inSessionDomText>http:\/\/www-142.ibm.com\/software\/products\/us\/en\/subcategory\/SWI10</inSessionDomText>
+    </inSessionDomTexts>
+    <ValidTrafficLogin>True</ValidTrafficLogin>
+    <ValidAblLogin>True</ValidAblLogin>
+    <AutomaticLoginValidated>False</AutomaticLoginValidated>
+    <RecordedSessionRequests>
+      <request scheme="http" host="192.168.57.245" path="/" port="8088" method="GET" RequestEncoding="28591" IsBodyEngineFiltered="False" IsWebSocket="False" SessionRequestType="Login" ordinal="1" ValidationStatus="None" MultiStepTested="true" sequencePlaybackRequired="true">
+        <raw encoding="none">GET / HTTP/1.1
+Sec-Fetch-Site: none
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+Connection: keep-alive
+Host: 192.168.57.245:8088
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Mode: navigate
+Content-Length: 0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-User: ?1
+Accept-Language: en-US
+Sec-Fetch-Dest: document
+
+</raw>
+        <response status="200" bodyEncoding="iso-8859-1">
+          <body value="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" compressedBinaryValue="true" />
+          <headers value="HTTP/1.1 200 OK&#xA;Server: Apache-Coyote/1.1&#xD;&#xA;Content-Length: 9192&#xD;&#xA;Set-Cookie: JSESSIONID=2CCDCFC61587506F6E8ACC7D3D2E727E; Path=/; HttpOnly&#xD;&#xA;Date: Tue, 07 Dec 2021 20:20:35 GMT&#xD;&#xA;Content-Type: text/html;charset=ISO-8859-1&#xD;&#xA;" />
+          <cookie name="JSESSIONID" value="2CCDCFC61587506F6E8ACC7D3D2E727E" path="/" domain="192.168.57.245" secure="False" httpOnly="True" expires="01/01/0001 00:00:00" />
+        </response>
+        <sessionCookies />
+      </request>
+      <request scheme="http" host="192.168.57.245" path="/login.jsp" port="8088" method="GET" RequestEncoding="28591" IsBodyEngineFiltered="False" IsWebSocket="False" SessionRequestType="Login" ordinal="10" ValidationStatus="None" MultiStepTested="true" sequencePlaybackRequired="true">
+        <raw encoding="none">GET /login.jsp HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+Referer: http://192.168.57.245:8088/
+Cookie: JSESSIONID=2CCDCFC61587506F6E8ACC7D3D2E727E
+Connection: keep-alive
+Host: 192.168.57.245:8088
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Mode: navigate
+Content-Length: 0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Language: en-US
+Sec-Fetch-Dest: document
+
+</raw>
+        <cookie name="JSESSIONID" value="2CCDCFC61587506F6E8ACC7D3D2E727E" path="/" domain="192.168.57.245" secure="False" httpOnly="False" expires="01/01/0001 00:00:00" />
+        <response status="200" bodyEncoding="iso-8859-1">
+          <body value="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" compressedBinaryValue="true" />
+          <headers value="HTTP/1.1 200 OK&#xA;Server: Apache-Coyote/1.1&#xD;&#xA;Content-Length: 8325&#xD;&#xA;Date: Tue, 07 Dec 2021 20:20:43 GMT&#xD;&#xA;Content-Type: text/html;charset=ISO-8859-1&#xD;&#xA;" />
+        </response>
+        <sessionCookies>
+          <cookie name="JSESSIONID" value="2CCDCFC61587506F6E8ACC7D3D2E727E" path="/" domain="192.168.57.245" secure="False" httpOnly="True" expires="01/01/0001 00:00:00" />
+        </sessionCookies>
+      </request>
+      <request scheme="http" host="192.168.57.245" path="/doLogin" port="8088" method="POST" RequestEncoding="28591" IsBodyEngineFiltered="False" IsWebSocket="False" SessionRequestType="Login" ordinal="11" ValidationStatus="None" MultiStepTested="true" sequencePlaybackRequired="true">
+        <raw encoding="none">POST /doLogin HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+Referer: http://192.168.57.245:8088/login.jsp
+Cookie: JSESSIONID=2CCDCFC61587506F6E8ACC7D3D2E727E
+Connection: keep-alive
+Host: 192.168.57.245:8088
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Mode: navigate
+Content-Length: 41
+Cache-Control: max-age=0
+Origin: http://192.168.57.245:8088
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-User: ?1
+Accept-Language: en-US
+Sec-Fetch-Dest: document
+Content-Type: application/x-www-form-urlencoded
+
+uid=jsmith&amp;passw=demo1234&amp;btnSubmit=Login</raw>
+        <cookie name="JSESSIONID" value="2CCDCFC61587506F6E8ACC7D3D2E727E" path="/" domain="192.168.57.245" secure="False" httpOnly="False" expires="01/01/0001 00:00:00" />
+        <parameter name="uid" captureIndex="0" value="jsmith" type="BODY" linkParamType="simplelink" separator="&amp;" operator="=" reportName="uid" />
+        <parameter name="passw" captureIndex="0" value="demo1234" type="BODY" linkParamType="simplelink" separator="&amp;" operator="=" reportName="passw" />
+        <parameter name="btnSubmit" captureIndex="0" value="Login" type="BODY" linkParamType="simplelink" separator="&amp;" operator="=" reportName="btnSubmit" />
+        <response status="302" bodyEncoding="utf-8">
+          <body value="UEsDBBQAAAAAAJt6h1MAAAAAAAAAAAAAAAAEACQAZGF0YQoAIAAAAAAAAQAYAKiyQ/Cn69cBqLJD8Kfr1wGoskPwp+vXAVBLAQItABQAAAAAAJt6h1MAAAAAAAAAAAAAAAAEACQAAAAAAAAAAAAAAAAAAABkYXRhCgAgAAAAAAABABgAqLJD8Kfr1wGoskPwp+vXAaiyQ/Cn69cBUEsFBgAAAAABAAEAVgAAAEYAAAAAAA==" compressedBinaryValue="true" />
+          <headers value="HTTP/1.1 302 Found&#xA;Location: /bank/main.jsp&#xD;&#xA;Server: Apache-Coyote/1.1&#xD;&#xA;Content-Length: 0&#xD;&#xA;Set-Cookie: AltoroAccounts=&quot;ODAwMDAyflNhdmluZ3N+MTAwMDAuNDJ8ODAwMDAzfkNoZWNraW5nfjE1MDAwLjM5fDQ1MzkwODIwMzkzOTYyODh+Q3JlZGl0IENhcmR+MTAwLjQyfA==&quot;; Version=1&#xD;&#xA;Date: Tue, 07 Dec 2021 20:20:51 GMT&#xD;&#xA;" />
+          <cookie name="AltoroAccounts" value="&quot;ODAwMDAyflNhdmluZ3N+MTAwMDAuNDJ8ODAwMDAzfkNoZWNraW5nfjE1MDAwLjM5fDQ1MzkwODIwMzkzOTYyODh+Q3JlZGl0IENhcmR+MTAwLjQyfA==&quot;" path="/" domain="192.168.57.245" secure="False" httpOnly="False" expires="01/01/0001 00:00:00" />
+        </response>
+        <sessionCookies>
+          <cookie name="JSESSIONID" value="2CCDCFC61587506F6E8ACC7D3D2E727E" path="/" domain="192.168.57.245" secure="False" httpOnly="True" expires="01/01/0001 00:00:00" />
+        </sessionCookies>
+      </request>
+      <request scheme="http" host="192.168.57.245" path="/bank/main.jsp" port="8088" method="GET" RequestEncoding="28591" IsBodyEngineFiltered="False" IsWebSocket="False" SessionRequestType="Regular" ordinal="12" ValidationStatus="None" MultiStepTested="true" sequencePlaybackRequired="true">
+        <raw encoding="none">GET /bank/main.jsp HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+Referer: http://192.168.57.245:8088/login.jsp
+Cookie: JSESSIONID=2CCDCFC61587506F6E8ACC7D3D2E727E; AltoroAccounts="ODAwMDAyflNhdmluZ3N+MTAwMDAuNDJ8ODAwMDAzfkNoZWNraW5nfjE1MDAwLjM5fDQ1MzkwODIwMzkzOTYyODh+Q3JlZGl0IENhcmR+MTAwLjQyfA=="
+Connection: keep-alive
+Host: 192.168.57.245:8088
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Mode: navigate
+Content-Length: 0
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-User: ?1
+Accept-Language: en-US
+Sec-Fetch-Dest: document
+
+</raw>
+        <cookie name="JSESSIONID" value="2CCDCFC61587506F6E8ACC7D3D2E727E" path="/bank" domain="192.168.57.245" secure="False" httpOnly="False" expires="01/01/0001 00:00:00" />
+        <cookie name="AltoroAccounts" value="&quot;ODAwMDAyflNhdmluZ3N+MTAwMDAuNDJ8ODAwMDAzfkNoZWNraW5nfjE1MDAwLjM5fDQ1MzkwODIwMzkzOTYyODh+Q3JlZGl0IENhcmR+MTAwLjQyfA==&quot;" path="/bank" domain="192.168.57.245" secure="False" httpOnly="False" expires="01/01/0001 00:00:00" />
+        <response status="200" bodyEncoding="iso-8859-1">
+          <body value="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" compressedBinaryValue="true" />
+          <headers value="HTTP/1.1 200 OK&#xA;Server: Apache-Coyote/1.1&#xD;&#xA;Content-Length: 5965&#xD;&#xA;Date: Tue, 07 Dec 2021 20:20:51 GMT&#xD;&#xA;Content-Type: text/html;charset=ISO-8859-1&#xD;&#xA;" />
+        </response>
+        <sessionCookies>
+          <cookie name="JSESSIONID" value="2CCDCFC61587506F6E8ACC7D3D2E727E" path="/" domain="192.168.57.245" secure="False" httpOnly="True" expires="01/01/0001 00:00:00" />
+          <cookie name="AltoroAccounts" value="&quot;ODAwMDAyflNhdmluZ3N+MTAwMDAuNDJ8ODAwMDAzfkNoZWNraW5nfjE1MDAwLjM5fDQ1MzkwODIwMzkzOTYyODh+Q3JlZGl0IENhcmR+MTAwLjQyfA==&quot;" path="/" domain="192.168.57.245" secure="False" httpOnly="False" expires="01/01/0001 00:00:00" />
+        </sessionCookies>
+      </request>
+    </RecordedSessionRequests>
+    <SessionVerifier>
+      <Enable>True</Enable>
+      <OutSession>False</OutSession>
+      <Pattern Base64="True">PlNpZ24gT2ZmPA==</Pattern>
+      <PatternType>Text</PatternType>
+      <request scheme="http" host="192.168.57.245" path="/bank/main.jsp" port="8088" method="GET" RequestEncoding="28591" IsBodyEngineFiltered="False" IsWebSocket="False" SessionRequestType="Regular" ordinal="12" ValidationStatus="None" MultiStepTested="true" sequencePlaybackRequired="true">
+        <raw encoding="none">GET /bank/main.jsp HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+Referer: http://192.168.57.245:8088/login.jsp
+Cookie: JSESSIONID=2CCDCFC61587506F6E8ACC7D3D2E727E; AltoroAccounts="ODAwMDAyflNhdmluZ3N+MTAwMDAuNDJ8ODAwMDAzfkNoZWNraW5nfjE1MDAwLjM5fDQ1MzkwODIwMzkzOTYyODh+Q3JlZGl0IENhcmR+MTAwLjQyfA=="
+Connection: keep-alive
+Host: 192.168.57.245:8088
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Mode: navigate
+Content-Length: 0
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-User: ?1
+Accept-Language: en-US
+Sec-Fetch-Dest: document
+
+</raw>
+        <cookie name="JSESSIONID" value="2CCDCFC61587506F6E8ACC7D3D2E727E" path="/bank" domain="192.168.57.245" secure="False" httpOnly="False" expires="01/01/0001 00:00:00" />
+        <cookie name="AltoroAccounts" value="&quot;ODAwMDAyflNhdmluZ3N+MTAwMDAuNDJ8ODAwMDAzfkNoZWNraW5nfjE1MDAwLjM5fDQ1MzkwODIwMzkzOTYyODh+Q3JlZGl0IENhcmR+MTAwLjQyfA==&quot;" path="/bank" domain="192.168.57.245" secure="False" httpOnly="False" expires="01/01/0001 00:00:00" />
+        <response status="200" bodyEncoding="iso-8859-1">
+          <body value="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" compressedBinaryValue="true" />
+          <headers value="HTTP/1.1 200 OK&#xA;Server: Apache-Coyote/1.1&#xD;&#xA;Content-Length: 5965&#xD;&#xA;Date: Tue, 07 Dec 2021 20:20:51 GMT&#xD;&#xA;Content-Type: text/html;charset=ISO-8859-1&#xD;&#xA;" />
+        </response>
+        <sessionCookies>
+          <cookie name="JSESSIONID" value="2CCDCFC61587506F6E8ACC7D3D2E727E" path="/" domain="192.168.57.245" secure="False" httpOnly="True" expires="01/01/0001 00:00:00" />
+          <cookie name="AltoroAccounts" value="&quot;ODAwMDAyflNhdmluZ3N+MTAwMDAuNDJ8ODAwMDAzfkNoZWNraW5nfjE1MDAwLjM5fDQ1MzkwODIwMzkzOTYyODh+Q3JlZGl0IENhcmR+MTAwLjQyfA==&quot;" path="/" domain="192.168.57.245" secure="False" httpOnly="False" expires="01/01/0001 00:00:00" />
+        </sessionCookies>
+      </request>
+    </SessionVerifier>
+    <InSessionRequestIndex>3</InSessionRequestIndex>
+    <ActionBasedSequence RecordingBrowser="Chromium">
+      <Enabled>True</Enabled>
+      <UseAbl>True</UseAbl>
+      <StartingUrl>http://192.168.57.245:8088</StartingUrl>
+      <Actions>
+        <Action ActionType="Wait" BrowserIndex="0" Validated="Success" ID="1b735824-bb88-4b64-a33c-a5dbd1554b9c">
+          <ElementLocations>
+            <ElementLocation isPreferred="False">
+              <tagName name="A" />
+              <attributes>
+                <attribute key="NAME" value="wait(sec)" />
+              </attributes>
+            </ElementLocation>
+          </ElementLocations>
+          <Value>0</Value>
+          <ProxyOrdinalRequestBeforeAction>-1</ProxyOrdinalRequestBeforeAction>
+        </Action>
+        <Action ActionType="Click" BrowserIndex="0" Validated="Success" ID="06faac6a-7a92-4a76-b7b7-5134f2e2dd2c">
+          <ElementLocations>
+            <ElementLocation isPreferred="False">
+              <hybridXPath>//*[@id='LoginLink']/FONT[1]</hybridXPath>
+              <xPath>//HTML[1]/BODY[1]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]/FONT[1]</xPath>
+              <tagName name="FONT" />
+              <innerText>Sign In</innerText>
+              <parentForm>&lt;FORM  id="frmSearch" method="get" action="/search.jsp" /&gt;</parentForm>
+              <attributes>
+                <attribute key="style" value="font-weight: bold; color: red;" />
+              </attributes>
+            </ElementLocation>
+          </ElementLocations>
+          <ProxyOrdinalRequestBeforeAction>-1</ProxyOrdinalRequestBeforeAction>
+        </Action>
+        <Action ActionType="Set" BrowserIndex="0" Validated="Success" ID="acbf5049-ade2-4a39-ae2d-f4c4f8348deb">
+          <ElementLocations>
+            <ElementLocation isPreferred="False">
+              <hybridXPath>//*[@id='uid']</hybridXPath>
+              <xPath>//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/INPUT[1]</xPath>
+              <tagName name="INPUT" />
+              <parentForm>&lt;FORM  action="doLogin" method="post" name="login" id="login" onsubmit="return (confirminput(login));" /&gt;</parentForm>
+              <attributes>
+                <attribute key="type" value="text" />
+                <attribute key="id" value="uid" />
+                <attribute key="name" value="uid" />
+                <attribute key="value" value="j" />
+                <attribute key="style" value="width: 150px;" />
+              </attributes>
+            </ElementLocation>
+          </ElementLocations>
+          <Value Base64="true" Encrypted="true">KMB7RDslbF8zxCu7z0DOzA==</Value>
+          <ProxyOrdinalRequestBeforeAction>-1</ProxyOrdinalRequestBeforeAction>
+        </Action>
+        <Action ActionType="Set" BrowserIndex="0" Validated="Success" ID="9964fc6d-3720-472a-b383-c34a2b8412d5">
+          <ElementLocations>
+            <ElementLocation isPreferred="False">
+              <hybridXPath>//*[@id='passw']</hybridXPath>
+              <xPath>//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/INPUT[1]</xPath>
+              <tagName name="INPUT" />
+              <parentForm>&lt;FORM  action="doLogin" method="post" name="login" id="login" onsubmit="return (confirminput(login));" /&gt;</parentForm>
+              <attributes>
+                <attribute key="type" value="password" />
+                <attribute key="id" value="passw" />
+                <attribute key="name" value="passw" />
+                <attribute key="style" value="width: 150px;" />
+                <attribute key="value" value="d" />
+              </attributes>
+            </ElementLocation>
+          </ElementLocations>
+          <Value Base64="true" Encrypted="true">4WxTLKB64EcfPdrD5dIocQ==</Value>
+          <ProxyOrdinalRequestBeforeAction>-1</ProxyOrdinalRequestBeforeAction>
+        </Action>
+        <Action ActionType="Wait" BrowserIndex="0" Validated="Success" ID="92a49ad3-9072-48da-86d8-c5137976eff3">
+          <ElementLocations>
+            <ElementLocation isPreferred="False">
+              <tagName name="A" />
+              <attributes>
+                <attribute key="NAME" value="wait(sec)" />
+              </attributes>
+            </ElementLocation>
+          </ElementLocations>
+          <Value>0</Value>
+          <ProxyOrdinalRequestBeforeAction>-1</ProxyOrdinalRequestBeforeAction>
+        </Action>
+        <Action ActionType="Click" BrowserIndex="0" Validated="Success" ID="c88759e2-dfc5-4f66-8e52-e91b692e4e44">
+          <ElementLocations>
+            <ElementLocation isPreferred="False">
+              <hybridXPath>//*[@id='login']/TABLE[1]/TBODY[1]/TR[3]/TD[2]/INPUT[1]</hybridXPath>
+              <xPath>//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/INPUT[1]</xPath>
+              <tagName name="INPUT" />
+              <parentForm>&lt;FORM  action="doLogin" method="post" name="login" id="login" onsubmit="return (confirminput(login));" /&gt;</parentForm>
+              <attributes>
+                <attribute key="type" value="submit" />
+                <attribute key="name" value="btnSubmit" />
+                <attribute key="value" value="Login" />
+              </attributes>
+            </ElementLocation>
+          </ElementLocations>
+          <ProxyOrdinalRequestBeforeAction>-1</ProxyOrdinalRequestBeforeAction>
+        </Action>
+      </Actions>
+      <VerifyElementsActionThreshold>0.6</VerifyElementsActionThreshold>
+      <LogoutRegex>log[_\-\s]?out|sign[_\-\s]?out|log[_\-\s]?off|sign[_\-\s]?off|exit|quit|bye-bye|clearuser|invalidate|sign out|sign off|log out|log off|disconnect</LogoutRegex>
+    </ActionBasedSequence>
+    <VariablesDefinitions>
+      <VariableDefinition IsRegularExpression="False" Name="">
+        <VariableType>DefaultDefinitions</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>None</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="^BV_">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="^CFID">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="^CFTOKEN">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__VIEWSTATE">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__EVENTVALIDATION">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__REQUESTDIGEST">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__VIEWSTATEGENERATOR">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__EVENTARGUMENT">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>None</RequestIgnoreStatus>
+        <EntityIgnoreStatus>None</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__EVENTTARGET">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>None</RequestIgnoreStatus>
+        <EntityIgnoreStatus>None</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__VIEWSTATEID">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments>An id of the viewstate that is stored in the server's db. </Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__LASTFOCUS">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__SCROLLPOSITIONX">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__SCROLLPOSITIONY">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__PREVIOUSPAGE">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__CALLBACKID">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>None</RequestIgnoreStatus>
+        <EntityIgnoreStatus>None</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__CALLBACKPARAM">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>None</RequestIgnoreStatus>
+        <EntityIgnoreStatus>None</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__VIEWSTATEFIELDCOUNT">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="__VIEWSTATE\d+">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="wsdl">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="disco">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="javax.faces.viewstate">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="^BV_">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="JSESSIONID">
+        <VariableType>Custom</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="IIS_COOKIELESS">
+        <VariableType>Custom</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="ses|token">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments>Session cookie regular expression</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="(?:server|user|u)_*id">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments>Server or user id</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="ObSSOCookie">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments>Single sign-on cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="CFTOKEN">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments>ColdFusion cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="CFID">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments>ColdFusion cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="CFGLOBALS">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments>ColdFusion cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name=".ASPXAUTH">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments>ASP.NET form authentication cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="auth_tkt">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments>apache mod_auth_tkt cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="LtpaToken">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments>IBM SSO session cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="LtpaToken2">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments>IBM SSO session cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="ASP.NET_SessionId">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments>.NET session cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="JSESSIONID">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments>Java session cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="PHPSESSID">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments>PHP session cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="WebLogicSession">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments>Web Logic session cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="JSESSIONID">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="PHPSESSID">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="__utm.|vgnvisitor|_csuid|_csoot|WEBTRENDS_ID|cookieenabledcheck|__qc[ab]|MintUnique|PD_STATEFUL|_sn|BCSI\\-">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments>Cookie that tracks visitor activity for a third-party application</Comments>
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="(ASPSESSIONID[a-zA-Z0-9]{8})">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>None</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>True</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="WC_AUTHENTICATION_(\d+)">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>None</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>True</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="WC_USERACTIVITY_(\d+)">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>None</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>True</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="GUID">
+        <VariableType>Custom</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="NUMERIC">
+        <VariableType>Custom</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="HEXDECIMAL">
+        <VariableType>Custom</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="DATE">
+        <VariableType>Custom</VariableType>
+        <Hosts />
+        <Path />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value />
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="ASP.NET_SessionId">
+        <VariableType>Cookie</VariableType>
+        <Hosts>192.168.57.245</Hosts>
+        <Path>/</Path>
+        <Comments>Extracted from manual login sequence recording</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>Login</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value>0uhzfg55d53d1b55sajmfuj3</Value>
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="amSessionId">
+        <VariableType>Cookie</VariableType>
+        <Hosts>192.168.57.245</Hosts>
+        <Path>/</Path>
+        <Comments>Extracted from manual login sequence recording</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>Login</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value>83657218974</Value>
+        </SessionID>
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="JSESSIONID">
+        <VariableType>Cookie</VariableType>
+        <Hosts>192.168.57.245</Hosts>
+        <Path>/</Path>
+        <Comments>Extracted from manual login sequence recording</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <CaptureName />
+        <CaptureIndex>-1</CaptureIndex>
+        <VariableOrigin>Login</VariableOrigin>
+        <AlwaysSend>False</AlwaysSend>
+        <IsGroup>False</IsGroup>
+        <SessionID TrackingMethod="ExploreAndLogin">
+          <Value>2CCDCFC61587506F6E8ACC7D3D2E727E</Value>
+        </SessionID>
+      </VariableDefinition>
+    </VariablesDefinitions>
+    <CustomParameters>
+      <CustomParameter LogicalName="JSESSIONID">
+        <Pattern>;(?:JSESSIONID|jsessionid)=([^/]+)$</Pattern>
+        <NameGroupIndex>-1</NameGroupIndex>
+        <ValueGroupIndex>1</ValueGroupIndex>
+        <TargetSegment>Path</TargetSegment>
+        <ResponsePattern />
+        <Condition />
+      </CustomParameter>
+      <CustomParameter LogicalName="IIS_COOKIELESS">
+        <Pattern>(\((?:[ASF]\([a-zA-Z0-9]+\)){1,3}\))</Pattern>
+        <NameGroupIndex>-1</NameGroupIndex>
+        <ValueGroupIndex>1</ValueGroupIndex>
+        <TargetSegment>Path</TargetSegment>
+        <ResponsePattern />
+        <Condition />
+      </CustomParameter>
+      <CustomParameter LogicalName="GUID">
+        <Pattern>((\{){0,1}[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}(\}){0,1})</Pattern>
+        <NameGroupIndex>-1</NameGroupIndex>
+        <ValueGroupIndex>1</ValueGroupIndex>
+        <TargetSegment>Path</TargetSegment>
+        <ResponsePattern />
+        <Condition />
+      </CustomParameter>
+      <CustomParameter LogicalName="HEXDECIMAL">
+        <Pattern>(([A-Fa-f0-9]{40})|([A-Fa-f0-9]{32}))</Pattern>
+        <NameGroupIndex>-1</NameGroupIndex>
+        <ValueGroupIndex>1</ValueGroupIndex>
+        <TargetSegment>Path</TargetSegment>
+        <ResponsePattern />
+        <Condition />
+      </CustomParameter>
+      <CustomParameter LogicalName="DATE">
+        <Pattern>\b((19|20)\d\d[-/.](0[1-9]|1[012])[-/.](0[1-9]|[12][0-9]|3[01]))\b</Pattern>
+        <NameGroupIndex>-1</NameGroupIndex>
+        <ValueGroupIndex>1</ValueGroupIndex>
+        <TargetSegment>Path</TargetSegment>
+        <ResponsePattern />
+        <Condition />
+      </CustomParameter>
+      <CustomParameter LogicalName="NUMERIC">
+        <Pattern>\b(\d{8,128})\b</Pattern>
+        <NameGroupIndex>-1</NameGroupIndex>
+        <ValueGroupIndex>1</ValueGroupIndex>
+        <TargetSegment>Path</TargetSegment>
+        <ResponsePattern />
+        <Condition />
+      </CustomParameter>
+    </CustomParameters>
+  </SessionManagement>
+  <LogoutFilter Enabled="True">(log[_\-\s]?out|sign[_\-\s]?out|log[_\-\s]?off|sign[_\-\s]?off|exit|quit|bye-bye|clearuser|invalidate)</LogoutFilter>
+  <ScanExpert>
+    <Automatic>False</Automatic>
+    <SELinkLimit Enabled="True">100</SELinkLimit>
+    <SETimeLimit Enabled="True">120</SETimeLimit>
+    <Analyses>
+      <Analysis name="Additional_Servers">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>8</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Case_Sensitive_Path">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>13</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="TestsCount">3</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="Client_Side_Certificate">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>3</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Custom_Error_Page">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>12</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="NumberOfTests">3</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="Depth_Limit">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>16</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="Threshold">20</ExtendedConfigurationElement> -->
+          <!-- <ExtendedConfigurationElement Name="MultiplyDepthLimit">2</ExtendedConfigurationElement> -->
+          <!-- <ExtendedConfigurationElement Name="DisableDepthLimit">False</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="Login_Page">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>4</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="No_Logout_Link">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>15</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Number_of_Threads">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>10</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Proxy_Authentication">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>2</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Session_IDs">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>6</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Suspicious_URLs">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>14</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="SuspicionIndications">(delete|remove|debug|reset|destroy|changepass)</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="Timeout">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>9</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="LowHighThresh">60</ExtendedConfigurationElement> -->
+          <!-- <ExtendedConfigurationElement Name="LowTOLinkThresh">1</ExtendedConfigurationElement> -->
+          <!-- <ExtendedConfigurationElement Name="HighTOLinkThresh">3</ExtendedConfigurationElement> -->
+          <!-- <ExtendedConfigurationElement Name="MaximalExcludeLinks">3</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="Unfilled_Forms">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>7</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Server_Authentication">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>1</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Environmental_Settings">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>20</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="ScanExpert_Evaluation">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>700</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="WebSpherePortal">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>21</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="WSPortalIndications">(WPS/MyPortal|WPS/Portal)</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="Flash_Parse">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>17</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Web_Services">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>19</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="WebGoat">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>9999</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Hacme">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>9999</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="WSPortalIndications">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>21</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+    </Analyses>
+  </ScanExpert>
+  <ResultsExpertModules>
+    <Module name="RawOrigReq">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="RawOrigReqResp">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="RawTestReqResp">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="RawOrigAndTestReq">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="RawOrigTestResp">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="RawOrigResp">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="RawTestResp">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="GenericRawTestReqResp">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="RendOrigTestResp">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="RendTestResp">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="RendTestRespFirstLast">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="XssRenderedResponse">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="BSQLi">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="FirstAndThirdTestResp">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="TraceTrackEnabled">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="GlassBoxSinkInformation">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="JSASinkInformation">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="CipherSuitesInformation">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="BinaryDataInformation">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+    <Module name="DNSIpInformation">
+      <Enabled>True</Enabled>
+      <ExtendedConfiguration />
+    </Module>
+  </ResultsExpertModules>
+  <ContentBasedView>
+    <Enabled>True</Enabled>
+    <PageletDetections />
+    <BreadCrumbsDetections>
+      <BreadCrumbsDetection>
+        <Name>Title</Name>
+        <Description>Determine the logical path according to the pages' titles</Description>
+        <Enabled>True</Enabled>
+        <Type>RegularExpression</Type>
+        <CaseSensitive>False</CaseSensitive>
+        <ConditionRegexp />
+        <PathRegexp>&lt;title&gt;(.*?)&lt;/title&gt;</PathRegexp>
+        <SeparatorRegexp>[:\-&gt;|]</SeparatorRegexp>
+        <DisplayNameRegexp>^\s*(.*?)\s*$</DisplayNameRegexp>
+        <DefaultPath />
+        <UrlAndParametersExpression />
+        <AllowedDomains />
+      </BreadCrumbsDetection>
+    </BreadCrumbsDetections>
+  </ContentBasedView>
+  <GlobalQuestions>
+    <Question LogicalName="osTypes" DefaultAnswer="NotDefined" CurrentAnswer="NotDefined" />
+    <Question LogicalName="serverTypes" DefaultAnswer="NotDefined" CurrentAnswer="NotDefined" />
+    <Question LogicalName="applicationServers" DefaultAnswer="NotDefined" CurrentAnswer="NotDefined" />
+    <Question LogicalName="databaseTypes" DefaultAnswer="NotDefined" CurrentAnswer="NotDefined" />
+    <Question LogicalName="thirdPartyComponents" DefaultAnswer="NotDefined" CurrentAnswer="NotDefined" />
+    <Question LogicalName="remoteSite" DefaultAnswer="NotDefined" CurrentAnswer="NotDefined" />
+    <Question LogicalName="productionSite" DefaultAnswer="NotDefined" CurrentAnswer="NotDefined" />
+    <Question LogicalName="deploymentType" DefaultAnswer="NotDefined" CurrentAnswer="NotDefined" />
+    <Question LogicalName="collateralDamagePotential" DefaultAnswer="NotDefined" CurrentAnswer="NotDefined" />
+    <Question LogicalName="targetDistribution" DefaultAnswer="NotDefined" CurrentAnswer="NotDefined" />
+    <Question LogicalName="confidentialityRequirement" DefaultAnswer="NotDefined" CurrentAnswer="NotDefined" />
+    <Question LogicalName="integrityRequirement" DefaultAnswer="NotDefined" CurrentAnswer="NotDefined" />
+    <Question LogicalName="availabilityRequirement" DefaultAnswer="NotDefined" CurrentAnswer="NotDefined" />
+  </GlobalQuestions>
+  <CrossScanDataAutoImport>True</CrossScanDataAutoImport>
+  <AdvancedScanOptions Version="2.7">
+    <Group Name="AWSAuthorization">
+      <Key SerialNum="100" Name="CognitoRefreshInterval" Type="UInt32" Value="270" ReExplore="yes" MinValue="270" />
+    </Group>
+    <Group Name="Communication">
+      <Key SerialNum="1110" Name="AcceptLanguageHeaderValue" Type="string" Value="en-US" ReExplore="yes" />
+      <Key SerialNum="1115" Name="IncludeAppScanDebugHeader" Type="boolean" Value="0" />
+      <Key SerialNum="1120" Name="LooseValidResponseDetection" Type="UInt32" Value="0" ReExplore="yes" MaxValue="2" />
+      <Key SerialNum="1125" Name="ReuseServerConnections" Type="boolean" Value="1" />
+      <Key SerialNum="1130" Name="MaxResponseLength" Type="UInt32" Value="8" ReExplore="yes" MinValue="1" MaxValue="100" />
+      <Key SerialNum="1135" Name="SlashNormalization" Type="boolean" Value="1" ReExplore="yes" />
+      <Key SerialNum="1136" Name="ForceNonParamsFormSubmission" Type="boolean" Value="1" ReExplore="yes" />
+      <Key SerialNum="1160" Name="RemoveAcceptEncodingFromRequest" Type="boolean" Value="1" ReExplore="yes" />
+      <Key SerialNum="1170" Name="SslCipherRestrictions" Type="string" Value="" ReExplore="yes" />
+      <Key SerialNum="1171" Name="TlsProtocols" Type="string" Value="TLS 1.2, TLS 1.1, TLS 1.0" />
+      <Key SerialNum="1172" Name="HttpVersion" Type="UInt32" Value="1" MaxValue="2" />
+      <Key SerialNum="1193" Name="SecurityPackageOrder" Type="string" Value="basic, digest, negotiate, kerberos, ntlm" ReExplore="yes" />
+    </Group>
+    <Group Name="General">
+      <Key SerialNum="1210" Name="InfoNeedSanitizePattern" Type="string" Value="" ReExplore="yes" EngineName="LogSanitizerRegex" IsRegexp="yes" />
+      <Key SerialNum="1220" Name="SanitizeLogs" Type="boolean" Value="0" ReExplore="yes" />
+      <Key SerialNum="1230" Name="SanitizeReports" Type="boolean" Value="0" ReTest="yes" />
+      <Key SerialNum="1260" Name="ProxyFileExtensionFilter" Type="string" Value="\.(zip|Z|tar|t?gz|sit|cab|pdf|ps|doc|ppt|xls|rtf|dot|mp(p|t|d|e|a|3|4|ga)|m4p|mdb|csv|pp(s|a)|xl(w|a)|dbf|slk|prn|dif|avi|mpe?g|mov(ie)?|qt|moov|rmi?|as(f|x)|m1v|wm(v|f|a)|wav|ra|au|aiff|midi?|m3u|gif|jpe?g|bmp|png|tif?f|ico|pcx|css|eot|woff|svg|ttf|xml)$" ReExplore="yes" EngineName="NonEssentialUrlsPattern" IsRegexp="yes" />
+      <Key SerialNum="1262" Name="ExcludeFromJSFilter" Type="string" Value="Cache-Control:[ ]*([^\n\r]*)(no-store|no-cache|max-age=0)" IsRegexp="yes" />
+      <Key SerialNum="1263" Name="EnableExcludeFromJSFilter" Type="boolean" Value="0" />
+      <Key SerialNum="1270" Name="EnableReverseMerge" Type="boolean" Value="1" ReExplore="yes" />
+      <Key SerialNum="1290" Name="AppScanBrowserSuppressErrorPopup" Type="boolean" Value="0" />
+      <Key SerialNum="1295" Name="DetectEncodingWithCed" Type="boolean" Value="1" ReExplore="yes" />
+    </Group>
+    <Group Name="JavaScript">
+      <Key SerialNum="1340" Name="FetchExternalLinks" Type="boolean" Value="0" ReExplore="yes" />
+      <Key SerialNum="1350" Name="jscripLinkRegExp" Type="string" Value="" ReExplore="yes" IsRegexp="yes" />
+      <Key SerialNum="1360" Name="MimicMozilla" Type="boolean" Value="0" ReExplore="yes" />
+    </Group>
+    <Group Name="Localization">
+      <Key SerialNum="1410" Name="OverrideHTMLEncoding" Type="string" Value="" ReExplore="yes" />
+    </Group>
+    <Group Name="ParametersAndCookies">
+      <Key SerialNum="1530" Name="UpdateTransFromRawResponse" Type="boolean" Value="0" ReExplore="yes" />
+      <Key SerialNum="1550" Name="TrackDynamicParametersInInlineContentOnly" Type="boolean" Value="1" ReExplore="yes" />
+      <Key SerialNum="1560" Name="CheckForJsonParametersRedundancy" Type="boolean" Value="1" ReExplore="yes" />
+      <Key SerialNum="1570" Name="CheckForXmlParametersRedundancy" Type="boolean" Value="1" ReExplore="yes" />
+    </Group>
+    <Group Name="ServerDownDetection">
+      <Key SerialNum="1710" Name="EnableExploreHeartbeat" Type="boolean" Value="1" ReExplore="yes" />
+      <Key SerialNum="1720" Name="EnableTestHeartbeat" Type="boolean" Value="1" ReExplore="yes" />
+      <Key SerialNum="1730" Name="HeartbeatInterval" Type="UInt32" Value="3" ReExplore="yes" MinValue="1" />
+      <Key SerialNum="1740" Name="NumReexploresForComm" Type="UInt32" Value="5" ReExplore="yes" />
+      <Key SerialNum="1750" Name="NumReqRetries" Type="UInt32" Value="2" ReExplore="yes" />
+      <Key SerialNum="1760" Name="NumRetestsForComm" Type="UInt32" Value="5" ReExplore="yes" />
+      <Key SerialNum="1770" Name="ReqRetryInterval" Type="UInt32" Value="1" ReExplore="yes" />
+      <Key SerialNum="1780" Name="ServerDownTimeout" Type="UInt32" Value="185" ReExplore="yes" MinValue="1" MaxValue="8640" />
+    </Group>
+    <Group Name="SessionManagement">
+      <Key SerialNum="1803" Name="AdDomains" Type="string" Value="ad\d.googlesyndication|doubleclick\.net|coremetrics\.|webtrends\.|112\.2o7\.net|view.atdmt.com|ad.yieldmanager.com|ads.adbrite.com|oasn04.247realmedia.com|segment-pixel.invitemedia.com|getpostman.com|pstmn.io|postman.co|soapui.org|soapuios/starter-pages|google-analytics.com" ReExplore="yes" IsRegexp="yes" />
+      <Key SerialNum="1805" Name="CommonStaticValues" Type="string" Value=" |true|false|\bon\b|\boff\b|\bout\b|checked|enabled|log\s?in|log\s?out|exit|submit|sign|ever|disabled|agree" ReExplore="yes" IsRegexp="yes" />
+      <Key SerialNum="1810" Name="HeartbeatInterval" Type="UInt32" Value="5" ReExplore="yes" />
+      <Key SerialNum="1820" Name="LoginBeforeSequenceReplay" Type="boolean" Value="1" ReExplore="yes" />
+      <Key SerialNum="1830" Name="LoginRetrySleepTimeSecs" Type="UInt32" Value="3" ReExplore="yes" MinValue="1" />
+      <Key SerialNum="1840" Name="MinNumberOfRequestsForHeartBeat" Type="UInt32" Value="1" ReExplore="yes" />
+      <Key SerialNum="1843" Name="NavHostRegex" Type="string" Value="https?://" ReExplore="yes" IsRegexp="yes" />
+      <Key SerialNum="1845" Name="NavigationalRegex" Type="string" Value="\bnav|url|page|step|redirect|request|location|target|argument|item|article|goto|node|action|ctrl|control|source|menu|frame|command|module|path" ReExplore="yes" IsRegexp="yes" />
+      <Key SerialNum="1847" Name="NavScriptRegex" Type="string" Value="/[^/\.]+\.(htm|jsp|jsf|ws|dll|asp|php|do)" ReExplore="yes" IsRegexp="yes" />
+      <Key SerialNum="1860" Name="ResendLastLoginHeartbeatAttacks" Type="boolean" Value="1" ReExplore="yes" />
+      <Key SerialNum="1870" Name="LoginContentTypeFilter" Type="string" Value="text/javascript|application/javascript|application/x-javascript|image|text/css|application/x-msdownload" ReExplore="yes" IsRegexp="yes" />
+      <Key SerialNum="1890" Name="ParseInSession" Type="boolean" Value="1" ReExplore="yes" />
+      <Key SerialNum="1891" Name="AnalyzeLoginRecording" Type="boolean" Value="1" />
+      <Key SerialNum="1892" Name="PasswordParameterNameFallBack" Type="string" Value="password|pass|pswd|pwd" />
+      <Key SerialNum="1895" Name="DisableExploreInSessionBuffering" Type="boolean" Value="0" ReExplore="yes" />
+      <Key SerialNum="1896" Name="UseEmptyCookieContainerWhenReplayingLogin" Type="boolean" Value="1" ReExplore="yes" />
+      <Key SerialNum="1899" Name="MultipartContentType" Type="string" Value="text/plain|text/|application/javascript|application/json|application/rtf|application/xml|text/xml|content_without_content_type_header" ReExplore="yes" IsRegexp="yes" />
+    </Group>
+    <Group Name="SpecialPattern">
+      <Key SerialNum="1910" Name="IgnoreParmetersFromFormFill" Type="string" Value="^CFID __EVENTVALIDATION __VIEWSTATE ^CFTOKEN __EVENTARGUMENT __EVENTTARGET ^BV_" ReExplore="yes" />
+    </Group>
+    <Group Name="TestOptions">
+      <Key SerialNum="2005" Name="AutomaticLinkLimit" Type="UInt32" Value="100000" ReTest="yes" EngineUpdated="yes" />
+      <Key SerialNum="2010" Name="DisableCookieTesting" Type="boolean" Value="0" ReExplore="yes" />
+      <Key SerialNum="2015" Name="DisableCookieTestingForStaticContent" Type="string" Value=";htm;html;ahtm;ahtml;chtm;chtml;fhtm;fhtml;mht;mhtm;mhtml;css;css1;js;" ReExplore="yes" />
+      <Key SerialNum="2020" Name="ExtractLinksFromNonVulnerables" Type="boolean" Value="0" ReExplore="yes" />
+      <Key SerialNum="2025" Name="FollowAutomaticLinks" Type="boolean" Value="0" ReExplore="yes" />
+      <Key SerialNum="2030" Name="LoginAfterTest" Type="UInt32" Value="0" ReExplore="yes" MaxValue="2" />
+      <Key SerialNum="2035" Name="MaxRequestsToValidate" Type="UInt32" Value="0" ReExplore="yes" />
+      <Key SerialNum="2040" Name="OmitTestsOnDirAndPath" Type="string" Value="/wps/[^/]*/!ut/" ReExplore="yes" IsRegexp="yes" />
+      <Key SerialNum="2045" Name="PathToCacheRegexp" Type="string" Value="" ReExplore="yes" EngineUpdated="yes" IsRegexp="yes" />
+      <Key SerialNum="2050" Name="PatternOfMeaningfulRequest" Type="string" Value="^POST" ReExplore="yes" EngineName="MeaningfulRequestPattern" IsRegexp="yes" />
+      <Key SerialNum="2055" Name="PatternOfMeaningfulResponse" Type="string" Value="Transaction Successful" ReExplore="yes" EngineName="MeaningfulResponsePattern" IsRegexp="yes" />
+      <Key SerialNum="2060" Name="PatternToOmitFromResponse" Type="string" Value="[0-9]{10,}|&lt;input[^&gt;]+(__VIEWSTATE|__EVENTTARGET|__EVENTARGUMENT|__EVENTVALIDATION)[^&gt;]+&gt;|([A-Za-z0-9]{32,})" ReExplore="yes" EngineName="RequestOmitPattern" IsRegexp="yes" />
+      <Key SerialNum="2065" Name="PortListenerUseAnyIP" Type="boolean" Value="0" ReExplore="yes" />
+      <Key SerialNum="2070" Name="RunXSSPayloadForEachProbe" Type="boolean" Value="0" ReExplore="yes" />
+      <Key SerialNum="2071" Name="UseBrowserForXSSRevalidation" Type="boolean" Value="1" ReTest="yes" />
+      <Key SerialNum="2080" Name="OverrideSimilarityThreshold" Type="UInt32" Value="0" ReTest="yes" MaxValue="100" />
+      <Key SerialNum="2081" Name="OverrideNotSimilarityThreshold" Type="UInt32" Value="0" ReTest="yes" MaxValue="100" />
+      <Key SerialNum="2090" Name="RefreshOriginalResponseInterval" Type="UInt32" Value="30" ReTest="yes" />
+      <Key SerialNum="2098" Name="AccountLockoutNumOfAttempts" Type="UInt32" Value="0" ReTest="yes" />
+      <Key SerialNum="2099" Name="TestedEntities" Type="string" Value="HttpServer | Directory | Path | Parameter | Cookie Name | Html Comment | Request | ClientScript | Response Cookie | Link | Flash Parameter | Page | Privilege Escalation Request | Header" />
+    </Group>
+    <Group Name="ActionBased">
+      <Key SerialNum="2300" Name="ActioBasedLoginPlayerType" Type="UInt32" Value="0" ReExplore="yes" MaxValue="3" />
+      <Key SerialNum="2310" Name="ActioBasedLoginPlayerTimeOut" Type="UInt32" Value="120" ReExplore="yes" MinValue="4" MaxValue="360" />
+      <Key SerialNum="2320" Name="ActioBasedMultiStepPlayerType" Type="UInt32" Value="1" ReTest="yes" MinValue="1" MaxValue="2" />
+      <Key SerialNum="2330" Name="MultiStepNonInterractionTimeOut" Type="UInt32" Value="10" ReTest="yes" MinValue="1" MaxValue="1200" />
+      <Key SerialNum="2340" Name="NumBrowserInstancesInTest" Type="UInt32" Value="5" MinValue="1" MaxValue="10" />
+      <Key SerialNum="2350" Name="MemoryConsumptionLimit" Type="UInt32" Value="1000" />
+      <Key SerialNum="2360" Name="AutoApproveJsDialogs" Type="boolean" Value="0" ReExplore="yes" />
+    </Group>
+  </AdvancedScanOptions>
+  <PreDefinedTemplateName Value="default" Version="1.0" />
+  <WebSphereConfig>
+    <Enabled>False</Enabled>
+    <DecodedUrlCacheSize>52428800</DecodedUrlCacheSize>
+    <WebSpherePortalPOCURLs />
+  </WebSphereConfig>
+</ScanConfiguration>
